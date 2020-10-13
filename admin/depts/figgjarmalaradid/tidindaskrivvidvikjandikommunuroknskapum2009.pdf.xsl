@@ -362,10 +362,10 @@
     -->
 
 
-    <xsl:template match="p[parent::body][not(./em | ./span)][text()]">
-        <xsl:variable name="text" select='current()' />
-        <xsl:variable name="type" select='@type' />
-        <xsl:variable name="lang" select='@xml:lang' />
+    <xsl:template match="p">
+        <xsl:variable name="text" select="current()"/>
+        <xsl:variable name="type" select="@type"/>
+        <xsl:variable name="lang" select="@xml:lang"/>
         <xsl:element name="p">
             <xsl:if test="$type">
                 <xsl:attribute name="type">
@@ -377,13 +377,7 @@
                     <xsl:value-of select="$lang"/>
                 </xsl:attribute>
             </xsl:if>
-
-            <xsl:call-template name="globalTextReplace">
-                <xsl:with-param name="inputString" select="$text"/>
-                <xsl:with-param name="target" select="'/'"/>
-                <xsl:with-param name="replacement" select="'x/'"/>
-                <xsl:with-param name="continue" select="0"/>
-            </xsl:call-template>
+            <xsl:value-of select="translate($text,'','') "/>
         </xsl:element>
     </xsl:template>
 
