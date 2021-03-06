@@ -11,7 +11,7 @@
         These days it is automatically added by the add_files_to_corpus tool.
         https://giellalt.uit.no/ling/CorpusTools.html#add_files_to_corpus
     -->
-    <xsl:variable name="filename" select="'2004.00 Orka og orkupolitikkur Ein lýsing av orkusøgu, rákum og royndum í Føroyum og øðrum londum.pdf'"/>
+    <xsl:variable name="filename" select="'2004.00 Orka og orkupolitikkur Ein lýsing av orkusøgu, rákum og royndum í Føroyum og øðrum londum.pdf'"/>
     <xsl:variable name="text_encoding" select="''"/>
     <xsl:variable name="title" select="''"/>
     <!--
