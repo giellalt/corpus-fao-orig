@@ -11,7 +11,7 @@
         These days it is automatically added by the add_files_to_corpus tool.
         https://giellalt.uit.no/ling/CorpusTools.html#add_files_to_corpus
     -->
-    <xsl:variable name="filename" select="'2003.06 Tilmæli til Yrkisútbúgvingarráðið frá fyribilsnevnd um at seta í verk yrkisútbúgving til byggismið.pdf'"/>
+    <xsl:variable name="filename" select="'2003.06 Tilmæli til Yrkisútbúgvingarráðið frá fyribilsnevnd um at seta í verk yrkisútbúgving til byggismið.pdf'"/>
     <xsl:variable name="text_encoding" select="''"/>
     <xsl:variable name="title" select="''"/>
     <!--

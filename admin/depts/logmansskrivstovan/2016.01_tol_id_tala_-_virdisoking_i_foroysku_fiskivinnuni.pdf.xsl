@@ -11,7 +11,7 @@
         These days it is automatically added by the add_files_to_corpus tool.
         https://giellalt.uit.no/ling/CorpusTools.html#add_files_to_corpus
     -->
-    <xsl:variable name="filename" select="'2016.01 Tøl, ið tala - Virðisøking í  føroysku fiskivinnuni.pdf'"/>
+    <xsl:variable name="filename" select="'2016.01 Tøl, ið tala - Virðisøking í  føroysku fiskivinnuni.pdf'"/>
     <xsl:variable name="text_encoding" select="''"/>
     <xsl:variable name="title" select="''"/>
     <!--
