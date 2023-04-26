@@ -140,9 +140,8 @@
         then the document is checked for all supported languages.
     -->
     <xsl:variable name="mlangs">
-        <language xml:lang="dan"/>
-        <language xml:lang="eng"/>
-    </xsl:variable>
+        <!-- <language xml:lang="dan"/> -->
+    <language xml:lang="dan"/><language xml:lang="eng"/></xsl:variable>
 
     <!--
         This is automatically added by add_files_to_corpus if a parallel file
@@ -159,6 +158,7 @@
         filename changed.
     -->
     <xsl:variable name="parallels">
+        <parallel_text xml:lang="dan" location=""/>
         <parallel_text xml:lang="eng" location=""/>
         <parallel_text xml:lang="fin" location=""/>
         <parallel_text xml:lang="fit" location=""/>
