@@ -129,7 +129,7 @@
         other languages. Set the variable monolingual to '1' to turn off
         language recognition (treating everything as mainlang)
     -->
-    <xsl:variable name="monolingual" select="''"/>
+    <xsl:variable name="monolingual" select="'1'"/>
 
     <!--
         If monolingual is not set, the document is multilingual.
@@ -140,7 +140,7 @@
         then the document is checked for all supported languages.
     -->
     <xsl:variable name="mlangs">
-        <language xml:lang="dan"/>
+        <!-- <language xml:lang="dan"/> -->
     </xsl:variable>
 
     <!--

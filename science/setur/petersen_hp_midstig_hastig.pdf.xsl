@@ -13,15 +13,15 @@
     -->
     <xsl:variable name="filename" select="'petersen_hp_miðstig_hástig.pdf'"/>
     <xsl:variable name="text_encoding" select="''"/>
-    <xsl:variable name="title" select="''"/>
+    <xsl:variable name="title" select="'Analytiskt mið- og hástig'"/>
     <!--
         Information of the first author: first name, last name,
         date or year of birth, nationality.
     -->
-    <xsl:variable name="author1_fn" select="''"/>
-    <xsl:variable name="author1_ln" select="''"/>
+    <xsl:variable name="author1_fn" select="'Hjalmar'"/>
+    <xsl:variable name="author1_ln" select="'Petersen'"/>
     <!-- m, f or unknown -->
-    <xsl:variable name="author1_gender" select="'unknown'"/>
+    <xsl:variable name="author1_gender" select="'m'"/>
     <!--
         The country where the author is from. It should be written as
         an ISO_3166-1 code.
@@ -140,8 +140,8 @@
         then the document is checked for all supported languages.
     -->
     <xsl:variable name="mlangs">
-        <!-- <language xml:lang="dan"/> -->
-    <language xml:lang="dan"/><language xml:lang="eng"/></xsl:variable>
+	<language xml:lang="eng"/>
+    </xsl:variable>
 
     <!--
         This is automatically added by add_files_to_corpus if a parallel file
